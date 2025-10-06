@@ -22,11 +22,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          ssh_key: ${{ b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACCUrfqVCOW6/bl6bKgWjv0DnVaOQF5/Za+PFC8Ds40u8gAAAKDgyy0v4Mst
-LwAAAAtzc2gtZWQyNTUxOQAAACCUrfqVCOW6/bl6bKgWjv0DnVaOQF5/Za+PFC8Ds40u8g
-AAAEAVPFfqFEWd7k0U3MIzQDDHGES7C+2x0V4iM9hzINFMeJSt+pUI5br9uXpsqBaO/QOd
-Vo5AXn9lr48ULwOzjS7yAAAAGG1oYWZhbjQyMjIwMDg5QGdtYWlsLmNvbQECAwQF }}
+          ssh_key: ${{  secrets.ACTIONS_DEPLOY_KEY }}
           remote_branch: gh-pages
           publish_dir: ./public
           force_orphan: true
