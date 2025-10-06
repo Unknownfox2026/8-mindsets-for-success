@@ -22,9 +22,9 @@ jobs:
       - name: Deploy to GitHub Pages via SSH
         uses: peaceiris/actions-gh-pages@v4
         with:
-          ssh_key: ${{  secrets.ACTIONS_DEPLOY_KEY }}
-          remote_branch: gh-pages
+          deploy_key: ${{  secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./public
+          publish_branch: gh-pages
           force_orphan: true
 
 
